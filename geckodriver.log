@@ -147,3 +147,16 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
 1729468288622	Marionette	INFO	Stopped listening on port 58782
 Dynamically enable window occlusion 1
+1729468467555	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileuFr0qA"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729468467873	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729468467988	Marionette	INFO	Listening on port 58960
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729468468120	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+1729468478187	Marionette	INFO	Stopped listening on port 58960
+Dynamically enable window occlusion 1

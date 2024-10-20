@@ -19,36 +19,6 @@ from selenium.webdriver.firefox.options import Options
 
 
 
-"""def create_ics_file(events_data):
-    
-    Creates an .ics file with multiple events from a list of event data.
-
-    Args:
-        events_data (list): List of dictionaries containing event data.
-        ics_filename (str): The filename of the .ics file to save the events.
-    
-    # Create a new calendar
-    cal = Calendar()
-
-    # Iterate through each event data dictionary
-    for event_data in events_data:
-        # Create a new event
-        event = Event()
-        event.name = event_data['title']
-        event.description = event_data['description']
-        
-        # Parse the start and end times
-        event.begin = datetime.strptime(event_data['start'], "%Y-%m-%dT%H:%M:%S.%fZ")
-        event.end = datetime.strptime(event_data['end'], "%Y-%m-%dT%H:%M:%S.%fZ")
-
-        # Add the event to the calendar
-        cal.events.add(event)
-
-    # Save the calendar to an .ics file
-    #with open(ics_filename, 'w') as f:
-    #    f.writelines(cal)
-    return cal
-"""
 # If modifying these SCOPES, delete the token.json file.
 
 
@@ -75,22 +45,6 @@ def authenticate_google_calendar():
     return service
 
 
-#def read_ics_file(ics_file):
-#    """Read the .ics file and extract event data."""
-#    #with open(ics_file, 'r') as file:
-#    #    calendar = Calendar(file.read())
-#    print('-------------------------------------------------------')
-#    print(ics_file)
-#    events = []
-#    for event in ics_file.events:
-#        event_data = {
-#            'summary': event.name,
-#            'description': event.description,
-#            'start': event.begin.datetime.isoformat(),
-#            'end': event.end.datetime.isoformat()
-#        }
-#        events.append(event_data)
-#    return events
 def check_event_exists(service, event_data):
     print("checking event-----------------------------")
     
@@ -126,7 +80,6 @@ def check_event_exists(service, event_data):
         else:
             print("no event")
             #return False  # No existing event found
-
 
 
 def create_google_calendar_event(service, event_data):
@@ -191,8 +144,6 @@ def get_credentials(service_name, username):
     return password
 
 
-
-
 def login_to_theircare(username, password):
     # Specify the path to the ChromeDriver
     options = Options()
@@ -244,8 +195,6 @@ def login_to_theircare(username, password):
     return jsessionid
 
 
-
-
 def get_start_end_of_current_month():
     # Get the current date
     current_date = datetime.now()
@@ -270,17 +219,9 @@ def create_url_with_dates(start, end):
 
 
 
-
-
-
 if __name__ == "__main__":
     # Replace with your actual service name
     service_name = "TheirCareService"
-
-    # Uncomment the following lines to store your credentials for the first time
-    # username = "your_username"
-    # password = "your_password"
-    # store_credentials(service_name, username, password)
 
     # Retrieve credentials securely
     username = "your_username"  # Replace with your actual username
@@ -303,10 +244,9 @@ def main():
     service_name = "TheirCareService"
 
     # Uncomment the following lines to store your credentials for the first time
-    username = "chantellefinderup@gmail.com"
+    username = "" #input email here for login
     
     # Retrieve credentials securely
-    #username = "your_username"  # Replace with your actual username
     password = get_credentials(service_name, username)
 
     if password:  # Proceed if password was retrieved successfully
@@ -331,7 +271,6 @@ def main():
     url = create_url_with_dates(start, end)
 
     # The URL of the page you're trying to access
- #   url = "https://theircare.fullybookedccms.com.au/family/portlet/bookings.json?start=2024-09-30T00:00:00&end=2024-11-09T00:00:00&timeZone=Australia/Melbourne"
 
     # Define the cookie you have, for example:
     cookies = {
@@ -368,7 +307,5 @@ def main():
             event_data['end'] = event_data['end'].replace("Z", "+1000")
             create_google_calendar_event(service, event_data)
             
-
-
 if __name__ == '__main__':
     main()
