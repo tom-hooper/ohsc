@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 import requests, os
-import json
+import json, time
 import keyring
+from datetime import datetime, timedelta
 from ics import Calendar, Event
 from datetime import datetime, timedelta
 from google.oauth2.credentials import Credentials
@@ -10,6 +11,12 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import getpass
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
+
 
 
 """def create_ics_file(events_data):
@@ -171,8 +178,6 @@ def fetch_events(service, event_data):
             print(event_data['title'])
             return False  # No existing event found
 
-
-
 def store_credentials(service_name, username, password):
     """Stores the login credentials securely using the keyring library."""
     keyring.set_password(service_name, username, password)
@@ -186,50 +191,87 @@ def get_credentials(service_name, username):
     return password
 
 
-import keyring
-import requests
-
-def store_credentials(service_name, username, password):
-    """Stores the login credentials securely using the keyring library."""
-    keyring.set_password(service_name, username, password)
-    print("Credentials stored successfully.")
-
-def get_credentials(service_name, username):
-    """Retrieves stored credentials securely."""
-    password = keyring.get_password(service_name, username)
-    if password is None:
-        print("No credentials found.")
-    return password
 
 
 def login_to_theircare(username, password):
-    """Logs into the TheirCare website and returns the session object and JSESSIONID."""
-    login_url = "https://theircare.fullybookedccms.com.au/family/login"
-    
-    # Start a session
-    session = requests.Session()
+    # Specify the path to the ChromeDriver
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
+    # Navigate to the login page
+    driver.get("https://theircare.fullybookedccms.com.au/family/login")
+    print ("Headless Firefox Initialized")
+    # Wait for the page to load (you can use explicit wait instead of sleep for better practice)
+    time.sleep(3)
 
-    # Define the payload with your login credentials
-    payload = {
-        'username': username,  # Adjust the field name if necessary
-        'password': password,  # Adjust the field name if necessary
-    }
+    # Find the username and password input fields by their name or id
+    username_field = driver.find_element(By.NAME, 'j_username')  # Adjust the field name
+    password_field = driver.find_element(By.NAME, 'j_password')  # Adjust the field name
 
-    # Send a POST request to log in
-    response = session.post(login_url, data=payload)
+    # Enter the username and password
+    username_field.send_keys(username)
+    password_field.send_keys(password)
 
-    # Check if login was successful
-    if response.ok and "Logout" in response.text:  # Adjust this based on actual response
+    # Submit the form (you can simulate hitting Enter or clicking the login button)
+    password_field.send_keys(Keys.RETURN)
+
+    # Wait for the login to process and the next page to load
+    time.sleep(5)
+
+    # Check the title of the page or for an element that verifies a successful login
+    if "Logout" in driver.page_source:  # Adjust this based on the actual page structure
         print("Login successful!")
 
-        # Retrieve JSESSIONID cookie
-        jsessionid = session.cookies.get('JSESSIONID')
-        print(f"JSESSIONID: {jsessionid}")  # Store or use this value as needed
+        # Retrieve cookies and store the JSESSIONID
+        cookies = driver.get_cookies()
+        jsessionid = None
+        for cookie in cookies:
+            if cookie['name'] == 'JSESSIONID':
+                jsessionid = cookie['value']
+                break
         
-        return session, jsessionid  # Return both session and JSESSIONID
+        if jsessionid:
+            print(f"JSESSIONID: {jsessionid}")
+            
+        else:
+            print("JSESSIONID not found.")
     else:
         print("Login failed.")
-        return None, None
+        print("Login failed.")
+
+    # Close the browser
+    driver.quit()
+    return jsessionid
+
+
+
+
+def get_start_end_of_current_month():
+    # Get the current date
+    current_date = datetime.now()
+
+    # Calculate the first day of the current month
+    start_of_month = current_date.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+
+    # Calculate the last day of the current month
+    next_month = (start_of_month.replace(day=28) + timedelta(days=4)).replace(day=1)
+    end_of_month = (next_month - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+
+    # Format the dates to the desired format
+    start_of_month_str = start_of_month.strftime('%Y-%m-%dT%H:%M:%S')
+    end_of_month_str = end_of_month.strftime('%Y-%m-%dT%H:%M:%S')
+
+    return start_of_month_str, end_of_month_str
+
+def create_url_with_dates(start, end):
+    url = f"https://theircare.fullybookedccms.com.au/family/portlet/bookings.json?start={start}&end={end}&timeZone=Australia/Melbourne"
+    return url
+
+
+
+
+
+
 
 if __name__ == "__main__":
     # Replace with your actual service name
@@ -268,13 +310,13 @@ def main():
     password = get_credentials(service_name, username)
 
     if password:  # Proceed if password was retrieved successfully
-        session = login_to_theircare(username, password)
+        JSESSIONID = login_to_theircare(username, password)
     else:
         password = getpass.getpass(prompt="Enter your password: ")
         store_credentials(service_name, username, password)
-        session = login_to_theircare(username, password)
+        JSESSIONID = login_to_theircare(username, password)
 
-        if session:
+        if JSESSIONID:
             # Example of making a request after login
             dashboard_url = "https://theircare.fullybookedccms.com.au/family/dashboard"  # Example URL
             dashboard_response = session.get(dashboard_url)
@@ -282,14 +324,20 @@ def main():
 
 
 
+    # Get the start and end of the current month
+    start, end = get_start_end_of_current_month()
+
+    # Generate URL with the start and end dates
+    url = create_url_with_dates(start, end)
+
     # The URL of the page you're trying to access
  #   url = "https://theircare.fullybookedccms.com.au/family/portlet/bookings.json?start=2024-09-30T00:00:00&end=2024-11-09T00:00:00&timeZone=Australia/Melbourne"
 
     # Define the cookie you have, for example:
-#    cookies = {
-#        'JSESSIONID': '661876440897F7D0336C0DBF2AE41EFD',
-#        'calendarDefaultView': 'dayGridMonth'  # Replace with actual cookie name and value
- #   }
+    cookies = {
+        'JSESSIONID': JSESSIONID,
+        'calendarDefaultView': 'dayGridMonth'  # Replace with actual cookie name and value
+   }
 
     # You can also include headers if necessary (e.g., user agent, etc.)
     headers = {
@@ -300,14 +348,13 @@ def main():
     response = requests.get(url, headers=headers, cookies=cookies)
 
     # Check the response
-  #  if response.status_code == 200:
+    if response.status_code == 200:
         # Get the response content as JSON
- #       json_content = response.json()
-
+        json_content = response.json()
     # Pretty-print the JSON content
-#        print(json.dumps(json_content, indent=4))
- #   else:
- #       print(f"Failed to fetch the page, status code: {response.status_code}")
+        print(json.dumps(json_content, indent=4))
+    else:
+        print(f"Failed to fetch the page, status code: {response.status_code}")
 
     service = authenticate_google_calendar()
     # Create events in Google Calendar
