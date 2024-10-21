@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import requests, os
+import requests, os, sys, getpass
 import json, time
 import keyring
 from datetime import datetime, timedelta
@@ -10,7 +10,6 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-import getpass
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -80,6 +79,7 @@ def check_event_exists(service, event_data):
         else:
             print("no event")
             #return False  # No existing event found
+
 
 
 def create_google_calendar_event(service, event_data):
@@ -189,7 +189,7 @@ def login_to_theircare(username, password):
     else:
         print("Login failed.")
         print("Login failed.")
-
+        sys.exit(0)
     # Close the browser
     driver.quit()
     return jsessionid
@@ -216,25 +216,6 @@ def create_url_with_dates(start, end):
     url = f"https://theircare.fullybookedccms.com.au/family/portlet/bookings.json?start={start}&end={end}&timeZone=Australia/Melbourne"
     return url
 
-
-
-
-if __name__ == "__main__":
-    # Replace with your actual service name
-    service_name = "TheirCareService"
-
-    # Retrieve credentials securely
-    username = "your_username"  # Replace with your actual username
-    password = get_credentials(service_name, username)
-
-    if password:  # Proceed if password was retrieved successfully
-        session, jsessionid = login_to_theircare(username, password)
-
-        if session:
-            # Example of making a request after login
-            dashboard_url = "https://theircare.fullybookedccms.com.au/family/dashboard"  # Example URL
-            dashboard_response = session.get(dashboard_url)
-            print(dashboard_response.text)  # Print the dashboard HTML or further process it
 
 
 
