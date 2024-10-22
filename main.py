@@ -4,7 +4,6 @@ import requests, os, sys, getpass
 import json, time
 import keyring
 from datetime import datetime, timedelta
-from ics import Calendar, Event
 from datetime import datetime, timedelta
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -99,7 +98,6 @@ def create_google_calendar_event(service, event_data):
     }
     created_event = service.events().insert(calendarId='primary', body=event).execute()
     print(f"Event created: {created_event.get('htmlLink')}")
-
 
 
 
@@ -225,7 +223,7 @@ def main():
     service_name = "TheirCareService"
 
     # Uncomment the following lines to store your credentials for the first time
-    username = "" #input email here for login
+    username = "chantellefinderup@gmail.com" #input email here for login
     
     # Retrieve credentials securely
     password = get_credentials(service_name, username)
@@ -240,7 +238,7 @@ def main():
         if JSESSIONID:
             # Example of making a request after login
             dashboard_url = "https://theircare.fullybookedccms.com.au/family/dashboard"  # Example URL
-            dashboard_response = session.get(dashboard_url)
+            dashboard_response = JSESSIONID.get(dashboard_url)
             print(dashboard_response.text)  # Print the dashboard HTML or further process it
 
 
@@ -284,8 +282,8 @@ def main():
             print(f"Event '{event_data['title']}' already exists.")
         else:
             # Create the event in Google Calendar
-            event_data['start'] = event_data['start'].replace("Z", "+1000")
-            event_data['end'] = event_data['end'].replace("Z", "+1000")
+            event_data['start'] = event_data['start'].replace("Z", "+1100")
+            event_data['end'] = event_data['end'].replace("Z", "+1100")
             create_google_calendar_event(service, event_data)
             
 if __name__ == '__main__':

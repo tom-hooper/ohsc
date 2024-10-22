@@ -160,3 +160,320 @@ console.error: "Warning: unrecognized command line flag" "-foreground"
 console.error: ({})
 1729468478187	Marionette	INFO	Stopped listening on port 58960
 Dynamically enable window occlusion 1
+1729469489328	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileWuIO0w"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729469489637	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729469489753	Marionette	INFO	Listening on port 59704
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729469489883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+1729469500138	Marionette	INFO	Stopped listening on port 59704
+Dynamically enable window occlusion 1
+1729469613099	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileg07ecE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729469613416	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729469613534	Marionette	INFO	Listening on port 59834
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729469613658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+ces.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729469649326	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729469649445	Marionette	INFO	Listening on port 59911
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729469649577	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+ce override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729469772449	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729469772566	Marionette	INFO	Listening on port 60058
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729469772693	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.error: "buildList failed: " ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+ of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729469788548	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729469788664	Marionette	INFO	Listening on port 60124
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729469788789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729469798683	Marionette	INFO	Stopped listening on port 60124
+Dynamically enable window occlusion 1
+1729477658269	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileFRmqpo"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477658588	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477658704	Marionette	INFO	Listening on port 49517
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729477658830	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+ox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofile3kHJKW"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477677812	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477677930	Marionette	INFO	Listening on port 49602
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729477678055	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileb9aDnn"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477711688	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477711828	Marionette	INFO	Listening on port 49722
+1729477711885	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileA42RTt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477760485	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477760621	Marionette	INFO	Listening on port 49919
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729477760768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileFQBrjb"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477795256	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477795373	Marionette	INFO	Listening on port 50689
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729477795500	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofile965xif"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729477822346	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729477822473	Marionette	INFO	Listening on port 50780
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729477822619	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileTKCLR7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729478041491	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729478041609	Marionette	INFO	Listening on port 51107
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729478041735	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729478051763	Marionette	INFO	Stopped listening on port 51107
+Dynamically enable window occlusion 1
+1729478114060	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileFwd1rj"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729478114387	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729478114501	Marionette	INFO	Listening on port 51294
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729478114635	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+Exiting due to channel error.
+Exiting due to channel error.
+1729478142743	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofilex8oEE3"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729478143105	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729478143241	Marionette	INFO	Listening on port 51396
+1729478143360	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729478153572	Marionette	INFO	Stopped listening on port 51396
+Dynamically enable window occlusion 1
+1729478286873	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofilegWzOMo"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729478287198	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729478287325	Marionette	INFO	Listening on port 51638
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729478287503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729478298168	Marionette	INFO	Stopped listening on port 51638
+Dynamically enable window occlusion 1
+1729478323273	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofilecIO71O"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729478323619	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729478323751	Marionette	INFO	Listening on port 51764
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729478323928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729478334371	Marionette	INFO	Stopped listening on port 51764
+Dynamically enable window occlusion 1
+1729486523326	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileaqx7by"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729486523661	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729486523784	Marionette	INFO	Listening on port 58936
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729486523938	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729486534667	Marionette	INFO	Stopped listening on port 58936
+Dynamically enable window occlusion 1
+1729487251229	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofile9AovKb"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729487251557	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729487251679	Marionette	INFO	Listening on port 59475
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729487251812	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1729487262638	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofiledHGbc6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729487262968	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729487263103	Marionette	INFO	Listening on port 59526
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729487263227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729487273235	Marionette	INFO	Stopped listening on port 59526
+Dynamically enable window occlusion 1
+1729487361421	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofilemWMK4e"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729487361735	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729487361847	Marionette	INFO	Listening on port 59629
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729487361976	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729487372155	Marionette	INFO	Stopped listening on port 59629
+Dynamically enable window occlusion 1
+1729526420340	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofilerpL5Ql"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729526420929	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729526421178	Marionette	INFO	Listening on port 59569
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729526421561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729526433047	Marionette	INFO	Stopped listening on port 59569
+Dynamically enable window occlusion 1
+1729538726917	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Tom\\AppData\\Local\\Temp\\rust_mozprofileK8vpt9"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1729538727252	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-foreground"
+1729538727401	Marionette	INFO	Listening on port 63515
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1729538727533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://theircare.fullybookedccms.com.au."
+1729538738417	Marionette	INFO	Stopped listening on port 63515
+Dynamically enable window occlusion 1
